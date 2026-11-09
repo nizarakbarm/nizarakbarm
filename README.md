@@ -1,8 +1,8 @@
 ### Nizar Akbar Meilani
 
-Linux system administrator, 8 years in web hosting operations at DomaiNesia — 4 of them running large-scale cPanel/WHM fleets. I patch kernel CVEs fleet-wide with Ansible, automate OpenResty/Nginx edge config, and write the monitoring and DDoS tooling that runs on it.
+Linux system administrator, 8 years in web hosting operations at DomaiNesia — 4 of them running large-scale cPanel/WHM fleets. I automate OpenResty/Nginx edge and provisioning config, and write the security and monitoring tooling that runs on it.
 
-**Currently:** L7 DDoS detection ([l7mon](https://github.com/nizarakbarm)), AI-agent sandboxing with nono and network-namespace egress isolation, Python eBPF.
+**Currently:** Python eBPF tracing (BCC vs Python-BPF), agent tooling in Rust, Nginx/WordPress provisioning and hardening, Icinga checks.
 
 **Talks**
 - *Kernel-Enforced Sandboxing for AI Agent Supply Chains with nono.sh* — openSUSE Asia Summit 2026
@@ -15,6 +15,7 @@ Linux system administrator, 8 years in web hosting operations at DomaiNesia — 
 - [`lve_error_monitoring_plugin`](https://github.com/nizarakbarm/lve_error_monitoring_plugin) — Icinga check for CloudLinux LVE error counts
 - [`Nginx-Wordpress-Provision`](https://github.com/nizarakbarm/Nginx-Wordpress-Provision) — provision template for Nginx + WordPress
 - [`ModSecExcluder`](https://github.com/nizarakbarm/ModSecExcluder) — per-user ModSecurity rule-ID exclusion
+- [`Cloudflareddos`](https://github.com/nizarakbarm/Cloudflareddos) — Cloudflare domain onboarding + under-attack mode from Python
 - [`oidc-github-pulumi-py`](https://github.com/nizarakbarm/oidc-github-pulumi-py) — OIDC provider in AWS for Pulumi Cloud
 
 **Elsewhere:** [LinkedIn](https://linkedin.com/in/nizarakbarm) · nizarakbarm04@gmail.com
