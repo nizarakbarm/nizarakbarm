@@ -15,21 +15,24 @@ Sysadmin at DomaiNesia, 8 years in web hosting operations — 4 of them running 
 
 ## 🔭 Currently
 
-- Python eBPF tracing — benchmarking BCC C-string runtime against Python-BPF AST AOT on the same tracepoint
+- Python eBPF tracing — benchmarking BCC C-string runtime against Python-BPF AST AOT on the same tracepoint. Two decks shipped: [PyCon HK 2026 HTML deck](https://github.com/nizarakbarm/pycon-hk-2026-bcc-vs-pythonbpf) and the [PyCon Taiwan 2026 Slidev deck](https://github.com/nizarakbarm/pycon-tw-2026-slidev) with its harness and measured dataset
+- Patching [Python-BPF](https://github.com/nizarakbarm/Python-BPF) (fork) — closing defects the benchmark exposed. First fix: a `kprobe` + `kretprobe` pair annotating the same `ctx` struct crashed the debug-info generator with `RecursionError` (shared `DILocalVariable` metadata cycle), forcing the split-file workaround. One node per function + regression tests; verifier CI suite revived on the fork
 - Agent tooling in Rust — [HackerOne API as an MCP server](https://github.com/nizarakbarm/hackerone_mcp_rust)
 - Nginx/WordPress provisioning and hardening, fleet-wide CVE exposure assessment
 
 ## 💬 Talks
 
 - **Kernel-Enforced Sandboxing for AI Agent Supply Chains with nono.sh** — openSUSE Asia Summit 2026
-- **Python eBPF: BCC C-String Runtime vs Python-BPF AST AOT** — PyCon Taiwan 2026, PyCon Hong Kong 2026
+- **Python eBPF: BCC C-String Runtime vs Python-BPF AST AOT** — PyCon Taiwan 2026 ([Slidev deck + dataset](https://github.com/nizarakbarm/pycon-tw-2026-slidev)), PyCon Hong Kong 2026 ([HTML deck](https://nizarakbarm.github.io/pycon-hk-2026-bcc-vs-pythonbpf/))
 - **IPList to BPFRule: A Python DDoS Mitigation Framework via XDP Hook of bpfilter** — PyCon Hong Kong 2025
 
 ## 📦 Selected work
 
 | Repo | What it is |
 |---|---|
-| [`pycon-tw-2026-bcc-vs-pythonbpf`](https://github.com/nizarakbarm/pycon-tw-2026-bcc-vs-pythonbpf) | BCC vs Python-BPF, same tracepoint, 2M events |
+| [`pycon-hk-2026-bcc-vs-pythonbpf`](https://github.com/nizarakbarm/pycon-hk-2026-bcc-vs-pythonbpf) | HTML deck — BCC vs Python-BPF, `sys_enter_execve`, 2M events, 3 instrumentation passes |
+| [`pycon-tw-2026-slidev`](https://github.com/nizarakbarm/pycon-tw-2026-slidev) | Slidev deck + benchmark harness + measured dataset + limitation inventory |
+| [`Python-BPF`](https://github.com/nizarakbarm/Python-BPF) | Fork — compiler fixes: two-section shared-`ctx` debug-info crash, verifier CI |
 | [`hackerone_mcp_rust`](https://github.com/nizarakbarm/hackerone_mcp_rust) | HackerOne API surface as an MCP server, Rust |
 | [`lve_error_monitoring_plugin`](https://github.com/nizarakbarm/lve_error_monitoring_plugin) | Icinga check for CloudLinux LVE error counts |
 | [`Nginx-Wordpress-Provision`](https://github.com/nizarakbarm/Nginx-Wordpress-Provision) | Nginx + WordPress provisioning template |
