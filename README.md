@@ -59,5 +59,3 @@ Sysadmin at DomaiNesia, 8 years in web hosting operations — 4 of them running 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=nizarakbarm&theme=tokyonight" alt="GitHub profile summary" />
 
 </details>
-
-<div align="center"><sub>l7mon, my L7 DDoS monitor, stays internal. Ask about it.</sub></div>
